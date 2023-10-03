@@ -36,6 +36,9 @@ header{
 #dropbtn{
     width: 20%;
     height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
 }
 .dropdown-content{
     display: none;
