@@ -12,6 +12,18 @@ header {
   padding: 1rem;
   background-color: white;
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
 .left-header {
   display: flex;
 }
@@ -46,7 +58,6 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  padding-left: 1rem;
 }
 
 .dropdown-content a {
@@ -107,17 +118,95 @@ main {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  padding-top: 1rem;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 51;
+}
 
-@media screen and (max-width: 950px) {
+#form-close {
+  position: fixed;
+  top: -3%;
+  left: 95%;
+  border-radius: 50%;
+  width: 8%;
+  padding-top: 8%;
+  border: none;
+  background-color: lightskyblue;
+}
+
+form {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.invisible {
+  display: none;
+}
+
+.form-text {
+  text-align: center;
+}
+.form-header {
+  display: flex;
+}
+
+#signup-form-btn,
+#login-form-btn {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: solid 1px black;
+  background-color: white;
+  width: 50%;
+  box-sizing: border-box;
+}
+.form-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+#signup-submit,
+#login-submit {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
   #search-input {
     width: 70%;
   }
   main {
     grid-template-columns: 1fr 1fr;
   }
+
+  .login-popup {
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 992px) {
+  .login-popup {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .logo-container {
     display: none;
   }
@@ -126,5 +215,8 @@ main {
   }
   main {
     grid-template-columns: 1fr;
+  }
+  .login-popup {
+    width: 80%;
   }
 }

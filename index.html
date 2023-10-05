@@ -8,20 +8,21 @@
     <title>e-commerce</title>
   </head>
   <body>
+    <div class="overlay"></div>
     <header>
       <div class="left-header">
         <div class="logo-container">LOGO</div>
         <div class="search-container">
-          <input type="text" id="search-input" placeholder="Search" />
+          <input type="text" oninput="searchBar()" id="search-input" placeholder="Search" />
         </div>
       </div>
       <div class="right-header">
         <div class="dropdown">
           <button id="dropbtn">menu</button>
           <div class="dropdown-content">
-            <a href="#">ph1</a>
-            <a href="#">ph2</a>
-            <a href="#">ph3</a>
+            <button id="login-btn" onclick="formShow(1)">login</a>
+            <button>placeholder</a>
+            <button>placeholder</a>
           </div>
         </div>
       </div>
@@ -76,5 +77,72 @@
         <button class="card-btn">Adicionar ao Carrinho</button>
       </div>
     </main>
+    <div class="login-popup">
+      <button id="form-close" onclick="formShow(0)"></button>
+      <div class="form-text">
+        <h1 id="signup-title">Create Your Account</h1>
+        <h1 id="login-title">Welcome Back</h1>
+      </div>
+      <div class="form-header">
+        <button id="signup-form-btn" onclick="formShow(1)">Sign Up</button>
+        <button id="login-form-btn" onclick="formShow(2)">Log In</button>
+      </div>
+      <form id="signup-form">
+        <div>
+          <label for="signup-name">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            id="signup-name"
+            placeholder="Your name"
+          />
+        </div>
+        <div>
+          <label for="signup-email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            id="signup-email"
+            placeholder="Your email"
+          />
+        </div>
+        <div>
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-input"
+            id="signup-password"
+            placeholder="Your password"
+          />
+        </div>
+        <button type="submit" id="signup-submit">sign up</button>
+      </form>
+      <form id="login-form">
+        <div>
+          <label for="login-email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            id="login-email"
+            placeholder="Your email"
+          />
+        </div>
+        <div>
+          <label for="login-password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-input"
+            id="login-password"
+            placeholder="Your password"
+          />
+        </div>
+        <button type="submit" id="login-submit">login</button>
+      </form>
+    </div>
   </body>
 </html>
