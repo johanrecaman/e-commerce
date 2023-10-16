@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  gap: 1rem;
+  padding-top: 1rem;
+  background-color: bisque;
+}
+
+.sidebar-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
