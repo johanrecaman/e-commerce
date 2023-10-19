@@ -7,7 +7,8 @@
     <title>Admin Panel</title>
   </head>
   <body>
-    <main>
+    <div class="card-dashboard"></div>
+    <div class="purchase-dashboard">
       <div class="sidebar">
         <div class="logo-container">LOGO</div>
         <div class="sidebar-content">
@@ -19,26 +20,53 @@
             <img src="" alt="" />
             <p>history</p>
           </button>
+          <button>
+            <img src="" alt="" />
+            <p>admin</p>
+          </button>
         </div>
       </div>
-      <div class="main-content">
-        <div class="card-dashboard"></div>
-        <div class="purchase-dashboard">
-          <div class="header-card">
-            <div class="data-card"></div>
-            <div class="data-card"></div>
-          </div>
-          <div class="main-card">
-            <div class="history-card">
-              <div class="card">
-                <p></p>
-                <p></p>
-                <p></p>
-              </div>
+      <div class="content">
+        <header>
+          <div class="analitycs-card">
+            <div>
+              <img src="" alt="logo" />
+            </div>
+            <div class="card-data">
+              <p>Renda Total</p>
+              <p>$13.540</p>
             </div>
           </div>
-        </div>
+          <div class="analitycs-card">
+            <div>
+              <img src="" alt="logo" />
+            </div>
+            <div class="card-data">
+              <p>Lucro Total</p>
+              <p>$13.540</p>
+            </div>
+          </div>
+          <div class="analitycs-card">
+            <div>
+              <img src="" alt="logo" />
+            </div>
+            <div class="card-data">
+              <p>Total de Vendas</p>
+              <p>$13.540</p>
+            </div>
+          </div>
+          <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search" />
+          </div>
+        </header>
+        <main>
+          <div class="history-card">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </main>
       </div>
-    </main>
+    </div>
   </body>
 </html>
