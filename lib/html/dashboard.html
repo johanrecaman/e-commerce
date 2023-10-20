@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/dashboard.js" defer></script>
     <link rel="stylesheet" href="../css/dashboard.css" />
     <title>Admin Panel</title>
   </head>
@@ -11,15 +12,15 @@
       <div class="sidebar">
         <div class="logo-container">LOGO</div>
         <div class="sidebar-content">
-          <button>
+          <button id="card-dashboard-btn" class="dashboard-btn" data-target="#card-dashboard">
             <img src="" alt="" />
             <p>card</p>
           </button>
-          <button>
+          <button id="purchase-dashboard-btn" class="dashboard-btn" data-target="#purchase-dashboard">
             <img src="" alt="" />
             <p>history</p>
           </button>
-          <button>
+          <button id="adm-dashboard-btn" class="dashboard-btn" data-target="#adm-dashboard">
             <img src="" alt="" />
             <p>admin</p>
           </button>
@@ -45,7 +46,7 @@
           </div>
         </header>
         <main>
-          <div class="history-card">
+          <div class="purchase-card">
             <div class="card-search-container">
               <input type="text" id="card-search-bar" placeholder="Search" />
             </div>
@@ -118,7 +119,7 @@
           </div>
         </header>
         <main>
-          <div class="history-card">
+          <div class="purchase-card">
             <p></p>
             <p></p>
             <p></p>
