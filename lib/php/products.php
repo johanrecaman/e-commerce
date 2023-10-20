@@ -10,9 +10,11 @@ while($row = mysqli_fetch_assoc($result)) {
     $products[] = array(
         'name' => $row['nome'],
         'price' => $row['preco'],
-        'img_url' => $row['url_imagem']
+        'cost' => $row['custo'],
+        'img_url'=> $row['url_imagem']
     );
 }
+
 mysqli_free_result($result);
 mysqli_close($conn);
 
