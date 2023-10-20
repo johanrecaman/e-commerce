@@ -20,7 +20,7 @@
         <div class="dropdown">
           <button id="dropbtn">menu</button>
           <div class="dropdown-content">
-            <button id="login-btn" onclick="formShow(1)">login</button>
+            <button id="login-btn">login</button>
             <a href="./lib/html/dashboard.html">
               <button>admin</button>
             </a>
@@ -32,16 +32,16 @@
     <main class="main">
     </main>
     <div class="login-popup">
-      <button id="form-close" onclick="formShow(0)"></button>
+      <button id="form-close" onclick="formClose()"></button>
       <div class="form-text">
-        <h1 id="signup-title">Create Your Account</h1>
-        <h1 id="login-title">Welcome Back</h1>
+        <h1 class="form-title" id="signup-title" >Create Your Account</h1>
+        <h1 class="form-title" id="login-title">Welcome Back</h1>
       </div>
       <div class="form-header">
-        <button id="signup-form-btn" onclick="formShow(1)">Sign Up</button>
-        <button id="login-form-btn" onclick="formShow(2)">Log In</button>
+        <button  data-target="#login-form" data-toggle="#login-title" class="form-btn">Log In</button>
+        <button  data-target="#signup-form" data-toggle="#signup-title" class="form-btn">Sign Up</button>
       </div>
-      <form id="signup-form">
+      <form id="signup-form" class="form">
         <div>
           <label for="signup-name">Name</label>
           <input
@@ -74,7 +74,7 @@
         </div>
         <button type="submit" id="signup-submit">sign up</button>
       </form>
-      <form id="login-form">
+      <form id="login-form" class="form">
         <div>
           <label for="login-email">E-mail</label>
           <input

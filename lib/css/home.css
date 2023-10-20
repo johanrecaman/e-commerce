@@ -164,8 +164,7 @@ form {
   display: flex;
 }
 
-#signup-form-btn,
-#login-form-btn {
+.form-btn{
   padding: 0.5rem;
   border: none;
   border-bottom: solid 1px black;
@@ -173,6 +172,7 @@ form {
   width: 50%;
   box-sizing: border-box;
 }
+
 .form-input {
   padding: 0.5rem;
   border: none;
