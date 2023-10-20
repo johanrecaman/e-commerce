@@ -7,8 +7,7 @@
     <title>Admin Panel</title>
   </head>
   <body>
-    <div class="card-dashboard"></div>
-    <div class="purchase-dashboard">
+    <div class="dashboard">
       <div class="sidebar">
         <div class="logo-container">LOGO</div>
         <div class="sidebar-content">
@@ -26,8 +25,67 @@
           </button>
         </div>
       </div>
-      <div class="content">
-        <header>
+      <div class="card-dashboard">
+        <header class="card-header">
+          <div class="card-crud-btn">
+            <div>
+              <img src="" alt="logo" />
+            </div>
+            <div class="card-data">
+              <p>Adicionar</p>
+            </div>
+          </div>
+          <div class="card-crud-btn">
+            <div>
+              <img src="" alt="logo" />
+            </div>
+            <div class="card-data">
+              <p>Remover</p>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="history-card">
+            <div class="card-search-container">
+              <input type="text" id="card-search-bar" placeholder="Search" />
+            </div>
+            <div class="product-cards-container">
+              <div class="product-card card-info">
+                <div class="product-card-img"></div>
+                <div class="product-card-data">
+                  <div class="card-text">
+                    <p>Nome</p>
+                  </div>
+                  <div class="card-text">
+                    <p>Preço</p>
+                  </div>
+                  <div class="card-text">
+                    <p>Custo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-img">
+                  <img src="../img/teste.png" alt="logo" />
+                </div>
+                <div class="product-card-data">
+                  <div class="card-text">
+                    <p>McFlurry</p>
+                  </div>
+                  <div class="card-text">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-text">
+                    <p>$8.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="purchase-dashboard">
+        <header class="purchase-header">
           <div class="analitycs-card">
             <div>
               <img src="" alt="logo" />
@@ -55,8 +113,8 @@
               <p>$13.540</p>
             </div>
           </div>
-          <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search" />
+          <div class="purchase-search-container">
+            <input type="text" id="purchase-search-bar" placeholder="Search" />
           </div>
         </header>
         <main>
