@@ -31,6 +31,14 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.header-btn-container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.header-btn{
+  width: 20%;
+}
 .logo-container {
   display: flex;
   width: 30%;
@@ -41,33 +49,6 @@ header {
 #search-input {
   width: 50%;
   padding: 0.2rem;
-}
-.dropdown {
-  width: 50%;
-  position: relative;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-#dropbtn {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0.2rem;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-}
-
-.dropdown-content a {
-  text-decoration: none;
-  color: black;
-}
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgray;
 }
 
 main {
