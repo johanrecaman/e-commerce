@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./lib/css/home.css" />
     <script src="./lib/js/home.js" defer></script>
-    <script src="./lib/js/home.js" defer></script>
+    <script src="./lib/js/login.js" defer></script>
     <title>e-commerce</title>
   </head>
   <body>
@@ -42,7 +42,7 @@
         <button  data-target="#login-form" data-toggle="#login-title" class="form-btn">Log In</button>
         <button  data-target="#signup-form" data-toggle="#signup-title" class="form-btn">Sign Up</button>
       </div>
-      <form id="signup-form" class="form">
+      <form id="signup-form" class="form" method="POST">
         <div>
           <label for="signup-name">Name</label>
           <input
@@ -75,7 +75,7 @@
         </div>
         <button type="submit" id="signup-submit">sign up</button>
       </form>
-      <form id="login-form" class="form">
+      <form id="login-form" class="form" method="POST">
         <div>
           <label for="login-email">E-mail</label>
           <input
