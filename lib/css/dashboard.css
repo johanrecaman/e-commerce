@@ -174,7 +174,7 @@ main {
 
 .card-text {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   width: 2rem;
 }
 

@@ -20,79 +20,13 @@
       <div class="right-header">
         <div class="header-btn-container">
           <button class="header-btn">cart</button>
-          <button class="header-btn" id="login-btn">login</button>
+          <button class="header-btn" id="login-btn" onclick="loginToggle(0)">login</button>
           <button class="header-btn invisible" id="sign-out-btn">Sign Out</button>
         </div>
       </div>
     </header>
     <main class="main">
     </main>
-    <div class="login-popup">
-      <button id="form-close" onclick="formClose()"></button>
-      <div class="form-text">
-        <h1 class="form-title" id="signup-title" >Create Your Account</h1>
-        <h1 class="form-title" id="login-title">Welcome Back</h1>
-      </div>
-      <div class="form-header">
-        <button  data-target="#login-form" data-toggle="#login-title" class="form-btn">Log In</button>
-        <button  data-target="#signup-form" data-toggle="#signup-title" class="form-btn">Sign Up</button>
-      </div>
-      <form id="signup-form" class="form" method="POST">
-        <div>
-          <label for="signup-name">Name</label>
-          <input
-            type="text"
-            name="name"
-            class="form-input"
-            id="signup-name"
-            placeholder="Your name"
-          />
-        </div>
-        <div>
-          <label for="signup-email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            class="form-input"
-            id="signup-email"
-            placeholder="Your email"
-          />
-        </div>
-        <div>
-          <label for="signup-password">Password</label>
-          <input
-            type="password"
-            name="password"
-            class="form-input"
-            id="signup-password"
-            placeholder="Your password"
-          />
-        </div>
-        <button type="submit" id="signup-submit">sign up</button>
-      </form>
-      <form id="login-form" class="form" method="POST">
-        <div>
-          <label for="login-email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            class="form-input"
-            id="login-email"
-            placeholder="Your email"
-          />
-        </div>
-        <div>
-          <label for="login-password">Password</label>
-          <input
-            type="password"
-            name="password"
-            class="form-input"
-            id="login-password"
-            placeholder="Your password"
-          />
-        </div>
-        <button type="submit" id="login-submit">login</button>
-      </form>
-    </div>
+    <div class="login-container"></div>
   </body>
 </html>
