@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../js/dashboard.js" defer></script>
+    <script src="../js/login.js" defer></script>
     <link rel="stylesheet" href="../css/dashboard.css" />
     <title>Admin Panel</title>
   </head>
-  <body>
+  <body onload="verifyLogin('../php/login.php?action=isLoggedIn')">
     <div class="dashboard">
       <div class="sidebar">
         <div class="logo-container">LOGO</div>
         <div class="sidebar-content">
-          <button class="dashboard-btn" data-target="#card-dashboard">
+          <div class="page-btns">
+            <button class="dashboard-btn" data-target="#card-dashboard">
+              <img src="" alt="" />
+              <p>card</p>
+            </button>
+            <button class="dashboard-btn" data-target="#purchase-dashboard">
+              <img src="" alt="" />
+              <p>history</p>
+            </button>
+            <button class="dashboard-btn" data-target="#adm-dashboard">
+              <img src="" alt="" />
+              <p>admin</p>
+            </button>
+          </div>
+          <button id="logout-btn" onclick="logout('../php/login.php?action=logout', '../../index.html')">
             <img src="" alt="" />
-            <p>card</p>
-          </button>
-          <button class="dashboard-btn" data-target="#purchase-dashboard">
-            <img src="" alt="" />
-            <p>history</p>
-          </button>
-          <button class="dashboard-btn" data-target="#adm-dashboard">
-            <img src="" alt="" />
-            <p>admin</p>
+            <p>LOG OUT</p>
           </button>
         </div>
       </div>

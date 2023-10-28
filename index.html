@@ -8,7 +8,7 @@
     <script src="./lib/js/login.js" defer></script>
     <title>e-commerce</title>
   </head>
-  <body>
+  <body onload="verifyLogin('./lib/php/login.php?action=isLoggedIn')">
     <div class="overlay"></div>
     <header>
       <div class="left-header">
@@ -19,9 +19,9 @@
       </div>
       <div class="right-header">
         <div class="header-btn-container">
-          <button class="header-btn">cart</button>
+          <button class="header-btn" >cart</button>
           <button class="header-btn" id="login-btn" onclick="loginToggle(0)">login</button>
-          <button class="header-btn invisible" id="sign-out-btn">Sign Out</button>
+          <button class="header-btn invisible" id="sign-out-btn" onclick="logout('./lib/php/login.php?action=logout', 'index.html')" >Sign Out</button>
         </div>
       </div>
     </header>
