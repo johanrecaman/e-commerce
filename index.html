@@ -19,8 +19,12 @@
       </div>
       <div class="right-header">
         <div class="header-btn-container">
-          <button class="header-btn" >cart</button>
-          <button class="header-btn" id="login-btn" onclick="loginToggle(0)">login</button>
+          <button class="header-btn">
+            <img class="header-btn-img" src="./lib/img/other-img/cart.svg" alt="">
+          </button>
+          <button class="header-btn" id="login-btn" onclick="loginToggle(0)">
+            <img class="header-btn-img" src="./lib/img/other-img/userprofile.svg" alt="">
+          </button>
           <button class="header-btn invisible" id="sign-out-btn" onclick="logout('./lib/php/login.php?action=logout', 'index.html')" >Sign Out</button>
         </div>
       </div>
