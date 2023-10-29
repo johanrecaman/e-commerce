@@ -22,9 +22,12 @@
           <button class="header-btn" id="addToCartBtn">
             <img class="header-btn-img" src="./lib/img/other-img/cart.svg" alt="Carrinho de Compras">
         </button>
-            <button class="header-btn" id="login-btn" onclick="loginToggle(0)">
+            <div class="header-btn" id="login-btn" onclick="loginToggle(0)">
                 <img class="header-btn-img" src="./lib/img/other-img/userprofile.svg" alt="Perfil do Usuário">
-            </button>
+                <div class="logout-container invisible">
+                  <button id="logoutBtn" onclick="logout('./lib/php/login.php?action=logout','./index.html')">Logout</button>
+                </div>
+              </div>
         </div>
     </div>
     </header>

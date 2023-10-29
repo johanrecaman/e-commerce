@@ -32,8 +32,8 @@ function login($conn){
 
 function logout(){
     session_destroy();
-    session_start();
     $_SESSION['user_type'] = 'none';
+    return $_SESSION['user_type'];
 }
 
 function isLoggedIn(){
@@ -57,7 +57,7 @@ else if($action == 'isLoggedIn'){
     exit();
 }
 else if($action == 'logout'){
-    logout();
+    echo logout();
     exit();
 }
 else if($action == 'whichUser'){
