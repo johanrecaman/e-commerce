@@ -8,6 +8,7 @@ $products = array();
 
 while($row = mysqli_fetch_assoc($result)) {
     $products[] = array(
+        'id' => $row['id'],
         'name' => $row['nome'],
         'price' => $row['preco'],
         'cost' => $row['custo'],
