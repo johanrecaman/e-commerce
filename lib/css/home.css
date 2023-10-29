@@ -46,6 +46,23 @@ header {
   height: 70%;
   object-fit: scale-down;
 }
+
+.jumping {
+  animation: jump 0.3s ease;
+}
+
+@keyframes jump {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
 .logo-container {
   display: flex;
   width: 30%;
@@ -105,6 +122,13 @@ main {
   border: none;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  cursor: pointer;
+}
+.card-btn:hover {
+  background-color: lightgray;
+}
+.card-btn:active {
+  background-color: grey;
 }
 .login-popup {
   display: none;
