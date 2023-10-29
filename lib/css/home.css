@@ -8,9 +8,9 @@
 header {
   position: fixed;
   display: flex;
-
   padding: 1rem;
   background-color: white;
+  height: 10%;
 }
 
 .overlay {
@@ -34,14 +34,16 @@ header {
 .header-btn-container{
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
 }
 .header-btn{
-  width: 20%;
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .header-btn-img{
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   object-fit: scale-down;
 }
 .logo-container {
