@@ -40,7 +40,7 @@ button {
   padding: 1rem;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-content {
@@ -84,7 +84,7 @@ button {
   padding: 1rem;
   text-align: center;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-crud-btn {
@@ -104,7 +104,7 @@ button {
   border-radius: 1rem;
   padding: 1rem;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 #card-search-bar {
@@ -121,7 +121,7 @@ main {
 .purchases-card {
   height: 100%;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 

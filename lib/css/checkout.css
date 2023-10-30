@@ -17,7 +17,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     background-color: white;
-    box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 p{
@@ -55,7 +55,7 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: border-color 0.3s ease;
-    box-shadow: 0px 0px 0.8rem 0px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .payment-button img {
