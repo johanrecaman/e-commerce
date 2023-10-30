@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.cart-container {
+    width: 35%;
+    height: 70%;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+}
+
+.products-container{
+    height: 65%;
+    overflow-y: auto;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.divider-light {
+    margin: 1rem 0;
+    border-top: 0.1rem solid #eee;
+}
+
+.product-card {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.product-card img {
+    width: 5.5rem;
+    height: 5.5rem;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.product-info {
+    flex: 1;
+    text-align: left;
+}
+
+.remove-button {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footer-btn{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.back-button {
+    background: none;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    justify-content: left;
+    width: 20%;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+
+.back-button:hover {
+    border: 2px solid #4caf50;
+}
+
+.back-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: scale-down;
+}
+
+.checkout-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
