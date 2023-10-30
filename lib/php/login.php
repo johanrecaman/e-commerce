@@ -30,10 +30,23 @@ function login($conn){
     }
 }
 
-function logout(){
-    session_destroy();
-    $_SESSION['user_type'] = 'none';
-    return $_SESSION['user_type'];
+function signup($conn){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+
+    $sqlCreateUser = "INSERT INTO usuarios (nome, email, senha_hash, tipo) VALUES ('$name', '$email', '$password', 'user')";
+    $sqlCheckIfUserExists = "SELECT * FROM usuarios WHERE email = '$email'";
+
+    $result = mysqli_query($conn, $sqlCheckIfUserExists);
+
+    if($row = mysqli_fetch_assoc($result)){
+        return json_encode("error");
+    }
+    else{
+        mysqli_query($conn, $sqlCreateUser);
+        return json_encode("success");
+    }
 }
 
 function isLoggedIn(){
@@ -42,6 +55,11 @@ function isLoggedIn(){
 
 function whichUser(){
     return $_SESSION['user_id'];
+}
+function logout(){
+    session_destroy();
+    $_SESSION['user_type'] = 'none';
+    return $_SESSION['user_type'];
 }
 
 
@@ -52,16 +70,21 @@ if($action == 'login'){
     mysqli_close($conn);
     exit();
 }
+else if($action == 'signup'){
+    echo signup($conn);
+    mysqli_close($conn);
+    exit();
+}
 else if($action == 'isLoggedIn'){
     echo isLoggedIn();
     exit();
 }
-else if($action == 'logout'){
-    echo logout();
-    exit();
-}
 else if($action == 'whichUser'){
     echo whichUser();
+    exit();
+}
+else if($action == 'logout'){
+    echo logout();
     exit();
 }
 

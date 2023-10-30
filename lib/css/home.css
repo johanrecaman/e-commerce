@@ -217,7 +217,9 @@ form {
   width: 50%;
   box-sizing: border-box;
 }
-
+.form-btn-border{
+  border-bottom: solid 1px blue;
+}
 .form-input {
   padding: 0.5rem;
   border: none;
@@ -231,6 +233,18 @@ form {
   border-radius: 0.2rem;
   background-color: white;
 }
+
+.empty-input{
+  border: solid 1px red;
+}
+
+.empty-text,
+.login-empty-text{
+  color: red;
+  font-size: 0.8rem;
+}
+
+
 
 @media screen and (max-width: 1200px) {
   #search-input {
