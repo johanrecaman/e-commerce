@@ -132,7 +132,8 @@ main {
 }
 
 .product-card,
-.purchase-card {
+.purchase-card,
+.card-info {
   display: flex;
   justify-content: space-around;
 }
@@ -142,11 +143,6 @@ main {
 }
 .grey-card{
   background-color: #f5f5f5;
-}
-
-.card-info {
-  margin: 0;
-  background-color: transparent;
 }
 
 .product-card-img {

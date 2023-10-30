@@ -124,10 +124,6 @@ main {
   justify-content: space-between;
 }
 
-.card-hidden {
-  display: none;
-}
-
 .card-img {
   height: 50%;
 }
