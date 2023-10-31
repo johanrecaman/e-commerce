@@ -35,7 +35,7 @@ function getCartProducts($conn){
 
 $action = $_GET["action"];
 
-if($action == "addToCar"){
+if($action == "addToCart"){
     addToCart($conn);
     mysqli_close($conn);
     exit();
