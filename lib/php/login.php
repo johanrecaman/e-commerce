@@ -26,7 +26,15 @@ function login($conn){
         }
     }
     else{
-        return json_encode("error");
+        $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+        $result = mysqli_query($conn, $sql);
+
+        if(mysqli_fetch_assoc($result)){
+            return json_encode("senha_invalida");
+        }
+        else{
+            return json_encode("email_invalido");
+        }
     }
 }
 
