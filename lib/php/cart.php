@@ -33,6 +33,14 @@ function getCartProducts($conn){
     return $products;
 }
 
+function removeFromCart($conn){
+    $userId = $_POST['user_id'];
+    $productId = $_POST['product_id'];
+
+    $sql = "DELETE FROM carrinho_de_compras WHERE usuario_id = '$userId' AND produto_id = '$productId' LIMIT 1";
+    mysqli_query($conn, $sql);
+}
+
 $action = $_GET["action"];
 
 if($action == "addToCart"){
@@ -42,6 +50,12 @@ if($action == "addToCart"){
 }
 elseif($action == "getCartProducts"){
     echo json_encode(getCartProducts($conn));
+    mysqli_close($conn);
+    exit();
+}
+elseif($action == "removeFromCart"){
+    echo 'oi';
+    removeFromCart($conn);
     mysqli_close($conn);
     exit();
 }
