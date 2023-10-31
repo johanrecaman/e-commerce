@@ -4,72 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/checkout.css"> <!-- Caminho correto para o arquivo CSS externo -->
+    <link rel="stylesheet" href="../css/checkout.css">
+    <script type="module" src="../js/checkout.js" defer></script>
     <title>Finalizar Compra</title>
 </head>
 
 <body>
-    <div class="checkout-container">
-        <h1>Checkout</h1>
-
-        <div class="payment-options">
-            <label class="payment-option">
-                <input type="checkbox" class="payment-checkbox">
-                <div class="payment-button">
-                    <img src="../img/payment-icons/visa.svg" alt="Visa">
-                </div>
-            </label>
-            <label class="payment-option">
-                <input type="checkbox" class="payment-checkbox">
-                <div class="payment-button">
-                    <img src="../img/payment-icons/mastercard.svg" alt="Mastercard">
-                </div>
-            </label>
-            <label class="payment-option">
-                <input type="checkbox" class="payment-checkbox">
-                <div class="payment-button">
-                    <img src="../img/payment-icons/pix.svg" alt="PIX">
-                </div>
-            </label>
-            <label class="payment-option">
-                <input type="checkbox" class="payment-checkbox">
-                <div class="payment-button">
-                    <img src="../img/payment-icons/paypal.svg" alt="PayPal">
-                </div>
-            </label>
+    <div class="container">
+        <div class="checkout-container">
+            <h1>Checkout</h1>
+            <div class="payment-options">
+                <label class="payment-option">
+                    <input type="checkbox" class="payment-checkbox" id="card" checked>
+                    <div class="payment-button">
+                        <img src="../img/payment-icons/card.svg" alt="Card">
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="checkbox" class="payment-checkbox" id="pix">
+                    <div class="payment-button">
+                        <img src="../img/payment-icons/pix.svg" alt="PIX">
+                    </div>
+                </label>
+            </div>
+            <form class="payment-form"></form>
         </div>
-        <form class="payment-form">
-            <div id="card-name-container" class="form">
-                <label for="card-name-input">Name on Card</label>
-                <input type="text" id="card-name-input" class="input">
-            </div>
-            <div class="card-data">
-                <div id="card-number-container" class="form">
-                    <label for="card-number-input">Card Number</label>
-                    <input type="text" id="card-number-input" class="input">
-                </div>
-                <div id="card-expiration-container" class="form" >
-                    <label for="card-expiration-input">Expiration</label>
-                    <input type="text" id="card-expiration-input" class="input">
-                </div>
-                <div id="card-cvv-container" class="form">
-                    <label for="card-cvv-input">CVV</label>
-                    <input type="text" id="card-cvv-input" class="input">
-                </div>
-                <div id="card-text-container">
-                    <p id="terms-of-service-text">By clicking "Confirm Payment" I agree to the company Terms of Service</p>
-                </div>
-                <div id="back-button-container" class="form">
-                    <button class="back-button">
-                        <img src="../img/other-img/arrow.svg" alt="Seta para Voltar">
-                        Voltar
-                    </button>
-                </div>
-                <div id="purchase-button-container">
-                    <button class="purchase-button" type="submit">Confirmar Pagamento $59.99</button>
-                </div>
-            </div>
-        </form>
     </div>
 </body>
 
