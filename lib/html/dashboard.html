@@ -10,28 +10,25 @@
   </head>
   <body>
     <div class="dashboard">
-      <div class="sidebar">
-        <div class="logo-container">LOGO</div>
+      <div class="dropdown-sidebar">
         <div class="sidebar-content">
-          <div class="page-btns">
-            <button class="dashboard-btn" data-target="#card-dashboard">
-              <img src="" alt="" />
-              <p>card</p>
+          <div class="dropdown">
+            <button class="menu-btn">
+              <img src="../img/other-img/menu.svg" alt="Menu" />
             </button>
-            <button class="dashboard-btn" data-target="#purchase-dashboard">
-              <img src="" alt="" />
-              <p>history</p>
-            </button>
-            <button class="dashboard-btn" data-target="#adm-dashboard">
-              <img src="" alt="" />
-              <p>admin</p>
-            </button>
+            <div class="dropdown-content">
+              <button class="dashboard-btn" data-target="#card-dashboard">
+                <p>card</p>
+              </button>
+              <button class="dashboard-btn" data-target="#purchase-dashboard">
+                <p>history</p>
+              </button>
+              <button class="dashboard-btn" data-target="#adm-dashboard">
+                <p>admin</p>
+              </button>
+            </div>
           </div>
-          <button id="logout-btn" onclick="logout('../php/login.php?action=logout', '../../index.html')">
-            <img src="" alt="" />
-            <p>LOG OUT</p>
-          </button>
-        </div>
+      </div>
       </div>
       <div id="card-dashboard" class="panel active">
         <header class="card-header">
@@ -41,14 +38,6 @@
             </div>
             <div class="card-data">
               <p>Adicionar</p>
-            </div>
-          </div>
-          <div class="card-crud-btn">
-            <div>
-              <img src="" alt="logo" />
-            </div>
-            <div class="card-data">
-              <p>Editar</p>
             </div>
           </div>
           <div class="card-crud-btn">
@@ -84,35 +73,32 @@
               </div>
             </div>
           </div>
+            <button id="logout-btn" onclick="logout('../php/login.php?action=logout', '../../index.html')">
+              <img src="" alt="" />
+              <p>LOG OUT</p>
+            </button>
         </main>
-      </div>
+        </div>
       <div id="purchase-dashboard" class="panel hidden">
         <header class="purchase-header">
-          <div class="analitycs-card">
-            <div>
-              <img src="" alt="logo" />
+          <div class="analytics">
+            <div class="analytics-card">
+              <div>
+                <img src="" alt="logo" />
+              </div>
+              <div class="card-data">
+                <p>Renda Total</p>
+                <p>$13.540</p>
+              </div>
             </div>
-            <div class="card-data">
-              <p>Renda Total</p>
-              <p>$13.540</p>
-            </div>
-          </div>
-          <div class="analitycs-card">
-            <div>
-              <img src="" alt="logo" />
-            </div>
-            <div class="card-data">
-              <p>Lucro Total</p>
-              <p>$13.540</p>
-            </div>
-          </div>
-          <div class="analitycs-card">
-            <div>
-              <img src="" alt="logo" />
-            </div>
-            <div class="card-data">
-              <p>Total de Vendas</p>
-              <p>$13.540</p>
+            <div class="analytics-card">
+              <div>
+                <img src="" alt="logo" />
+              </div>
+              <div class="card-data">
+                <p>Total de Vendas</p>
+                <p>$13.540</p>
+              </div>
             </div>
           </div>
           <div class="purchase-search-container">
@@ -138,7 +124,11 @@
                 </div>
             </div>
           </div>
-        </main>
+            <button id="logout-btn" onclick="logout('../php/login.php?action=logout', '../../index.html')">
+              <img src="" alt="" />
+              <p>LOG OUT</p>
+            </button>
+        </main> 
       </div>
     </div>
   </body>
