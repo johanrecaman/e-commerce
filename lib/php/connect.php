@@ -2,7 +2,7 @@
 $hostname = "localhost";
 $dbname = "ecommerce";
 $username = "root";
-$password = "root";
+$password = "rooot";
 
 $conn = mysqli_connect($hostname, $username, $password, $dbname);
 if (!$conn) {

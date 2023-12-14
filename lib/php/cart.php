@@ -54,7 +54,6 @@ elseif($action == "getCartProducts"){
     exit();
 }
 elseif($action == "removeFromCart"){
-    echo 'oi';
     removeFromCart($conn);
     mysqli_close($conn);
     exit();

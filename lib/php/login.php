@@ -48,7 +48,7 @@ function signup($conn){
 
     $result = mysqli_query($conn, $sqlCheckIfUserExists);
 
-    if($row = mysqli_fetch_assoc($result)){
+    if(mysqli_fetch_assoc($result)){
         return json_encode("error");
     }
     else{
