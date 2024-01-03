@@ -5,11 +5,15 @@
   width: 100%;
 }
 
+body{
+  font-family: 'Open Sans'; 
+}
+
 header {
   position: fixed;
   display: flex;
   padding: 1rem;
-  background-color: white;
+  background-color: #ee9b00;
   height: 4rem;
 }
 
@@ -101,11 +105,14 @@ header {
   width: 30%;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 #search-input {
   width: 50%;
-  padding: 0.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
 }
 
 main {
@@ -117,8 +124,9 @@ main {
 }
 
 .card {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border: 0.2px solid #ee9b00;
   border-radius: 1rem;
+  height: 17rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,7 +142,6 @@ main {
 }
 .card-name,
 .card-price {
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
@@ -143,7 +150,7 @@ main {
 .card-price {
   font-size: 1rem;
   font-weight: lighter;
-  color: gray;
+  color: #ca6702;
 }
 
 .card-btn {
@@ -152,12 +159,14 @@ main {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   cursor: pointer;
+  color: white;
+  background-color: #ee9b00;
 }
 .card-btn:hover {
-  background-color: lightgray;
+  background-color: #ca6702;
 }
 .card-btn:active {
-  background-color: grey;
+  background-color: #ca6702;
 }
 .login-popup {
   display: none;
@@ -174,16 +183,25 @@ main {
 }
 
 #form-close {
+  top: 0;
+  right: 0;
   position: fixed;
-  top: -3%;
-  left: 95%;
-  border-radius: 50%;
-  width: 8%;
-  padding-top: 8%;
+  border-radius: 0 1rem 0 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: none;
-  background-color: lightskyblue;
+  background-color:#ee9b00;
+  cursor: pointer;
 }
 
+#form-close:hover {
+  background-color: #ca6702;
+}
+
+.login-exit-img{
+  height: 1rem;
+  width: 1rem;
+}
 form {
   padding: 1.5rem;
   padding-top: 0;
@@ -214,12 +232,28 @@ form {
   box-sizing: border-box;
 }
 .form-btn-border{
-  border-bottom: solid 1px blue;
+  border-bottom: solid 1px #ee9b00;
+}
+
+#signup-title{
+  padding: 1rem;
 }
 .form-input {
   padding: 0.5rem;
-  border: none;
+  border: 1px solid #ee9b00;
   border-radius: 0.2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #signup-submit,
@@ -227,7 +261,13 @@ form {
   padding: 0.5rem;
   border: none;
   border-radius: 0.2rem;
-  background-color: white;
+  background-color: #ee9b00;
+  color: white;
+  cursor: pointer;
+}
+
+#signup-submit:hover, #login-submit:hover {
+  background-color: #ca6702;
 }
 
 .empty-input{
@@ -322,6 +362,10 @@ object-fit: scale-down;
   .header-btn-img{
     width: 150%;
     height: 150%;
+  }
+
+  .card{
+    min-height: 20rem;
   }
   
   .login-popup {

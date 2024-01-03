@@ -22,7 +22,7 @@ body {
     width: 50%;
     text-align: center;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ee9b00;
     border-radius: 0.5rem;
     background-color: white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -71,7 +71,7 @@ h1 {
 }
 
 .payment-checkbox:checked + .payment-button {
-    border-color: #4caf50;
+    border-color: #ee9b00;
 }
 
 .payment-form{
@@ -98,6 +98,11 @@ label{
     border-radius: 0.5rem;
     border: 1px solid #ccc;
     padding: 0.7rem;
+}
+
+.input:focus{
+    outline: none;
+    border: 1px solid #ee9b00;
 }
 
 #card-name-container{
@@ -142,7 +147,7 @@ label{
     text-align: center;
     justify-content: center;
     background: none;
-    border: 2px solid #4caf50;
+    border: 2px solid #ee9b00;
     cursor: pointer;
     padding: 0.2rem;
     border-radius: 0.5rem;
@@ -151,7 +156,7 @@ label{
 }
 
 .back-button:hover {
-    border: 2px solid #4caf50;
+    border: 2px solid #ca6702;
 }
 
 .back-button img {
@@ -165,7 +170,7 @@ label{
 }
 .purchase-button {
     width: 100%;
-    background-color: #4caf50;
+    background-color: #ee9b00;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -174,7 +179,7 @@ label{
 }
 
 .purchase-button:hover {
-    background-color: #45a049;
+    background-color: #ca6702;
 }
 
 .form-container{
